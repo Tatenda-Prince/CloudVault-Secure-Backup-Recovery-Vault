@@ -254,7 +254,7 @@ json
 
 5.Wait for the instance to fully stop.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c50a041205e95c86161254bb76a5b8b6934b9da4/img/Screenshot%202025-02-24%20160105.png)
 
 
 
