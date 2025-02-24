@@ -237,7 +237,7 @@ json
 1.Check Lambda Logs in CloudWatch
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/5372820af3988701c16faef6d473fa6661fc17f5/img/Screenshot%202025-02-24%20150641.png)
 
 
 ## Step 5: lets test the Backup & Recovery System
