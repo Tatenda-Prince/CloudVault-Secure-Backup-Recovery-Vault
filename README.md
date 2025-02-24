@@ -281,20 +281,18 @@ json
 ![image_alt]()
 
 
-## Ensure the Volume is Restored from the Snapshot
 
-1.Go to EC2 > Volumes.
 
-3.Find the old EBS volume (associated with the stopped instance).
 
-4.Check if a new EBS volume was created from the latest snapshot.
+## Check Lambda Logs in CloudWatch
 
-5.Go to EC2 > Instances, find the new instance, and check its attached volumes.
+1.Here is the cloudwatch logs verifying that both the instance failed and EBS Volume, Now the latest snapshot is creating a new volume to create a new instance.
+
 
 ![image_alt]()
 
 
-## Check Lambda Logs in CloudWatch
+
 
 
 
