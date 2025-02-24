@@ -87,7 +87,7 @@ terraform init
 
 Upon completion of the initialization process, a successful prompt will be displayed, as shown below.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c01f071ba93cbc72580be117fe8b399b9bd3a0d0/img/Screenshot%202025-02-24%20115309.png)
 
 2.3.Next, let’s ensure that our code does not contain any syntax errors by running the following command —
 
