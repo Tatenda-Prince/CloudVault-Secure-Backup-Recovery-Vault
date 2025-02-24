@@ -213,10 +213,10 @@ Navigate to the `backups/ folder.`
 
 Look for a file named like:
 
-
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/6c293a0159fb40ff86fb3f4f2716f4cb367e64aa/img/Screenshot%202025-02-24%20140437.png)
 
 Download & open the JSON file to verify the snapshot metadata is stored correctly.
+
 
 
 4.4.Confirm SNS Notification Received
