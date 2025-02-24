@@ -277,7 +277,7 @@ json
 
 2.Look for a new `EC2 instance` being launched automatically.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/f78031a726d3c28a9a6ce27c08ed8c024d6a4979/img/Screenshot%202025-02-24%20153840.png)
 
 
 
