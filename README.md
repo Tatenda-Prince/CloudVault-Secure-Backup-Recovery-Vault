@@ -72,10 +72,62 @@ This project serves as a valuable resource for organizations and their cloud eng
 1.1.Clone this repository to your local machine.
 
 ```language
-
-git clone
-
+git clone https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault.git
 ```
+
+## Step 2 : Run Terraform workflow to initialize, validate, plan then apply
+
+2.1.We are going to deploye our resources Amazon EC2 , AWS Lambda, Amazon Eventbridge, Amazon S3 Glacier, Amazon SNS , IAM and CloudWatch.
+
+2.2.In your local terraform visual code environment terminal, to initialize the necessary providers, execute the following command in your environment terminal.
+
+```language
+terraform init
+```
+
+Upon completion of the initialization process, a successful prompt will be displayed, as shown below.
+
+![image_alt]()
+
+2.3.Next, let’s ensure that our code does not contain any syntax errors by running the following command —
+
+```language
+terraform validete
+```
+The command should generate a success message, confirming that it is valid, as demonstrated below.
+
+![image_alt]()
+
+2.4.Let’s now execute the following command to generate a list of all the modifications that Terraform will apply. —
+
+```language
+terraform plan
+```
+
+![image_alt]()
+
+
+The list of changes that Terraform is anticipated to apply to the infrastructure resources should be displayed. The “+” sign indicates what will be added, while the “-” sign indicates what will be removed.
+
+
+2.5.Now, let’s deploy this infrastructure! Execute the following command to apply the changes and deploy the resources.
+Note — Make sure to type “yes” to agree to the changes after running this command
+
+```language
+terraform apply
+```
+
+Terraform will initiate the process of applying all the changes to the infrastructure. Kindly wait for a few seconds for the deployment process to complete.
+
+![image_alt]()
+
+
+## Success!
+
+The process should now conclude with a message indicating “Apply complete”, stating the total number of added, modified, and destroyed resources, accompanied by several resources.
+
+![image_alt]()
+
 
 
 
