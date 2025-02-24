@@ -4,7 +4,7 @@
 
 ## Technical Architecture
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/9c00b8915372a40153f7b5f6a01ed4aaf2d91d65/img/Screenshot%202025-02-24%20184227.png)
 
 
 ## Project Overview
