@@ -133,7 +133,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.1.In the AWS Management Console, head to the Amazon Lambda dashboard and verify that the two `ebs-backup-lambda` & `ebs-recovery-lambda` function were successfully created
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/436665ad8112ec7c38913416a8e6839669f07fbd/img/Screenshot%202025-02-24%20123417.png)
 
 
 3.2.In the AWS Management Console, head to the Amazon S3 dashboard and verify that the tatenda-backup-recovery-vault bucket was successfully created with the Lifecycle Configuration `MoveToGlacier`
