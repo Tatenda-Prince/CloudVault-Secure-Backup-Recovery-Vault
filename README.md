@@ -148,7 +148,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.4.In the AWS Management Console, head to the Amazon SNS dashboard and verify that the `backup-alerts-topic` was successfully created and Note you must create a subscription for your topic in order to receive notifications through your emails
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/3f71b70fff3e77acff434eaa8f23ab414a0df508/img/Screenshot%202025-02-24%20125052.png)
 
 
 3.5.In the AWS Management Console, head to the Amazon EC2 dashboard and verify that the Backup-Prod-EC2 was successfully created with EBS Volume attached to it 
