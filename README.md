@@ -292,6 +292,11 @@ json
 
 
 
+## Congratulations
+
+We have successfully created "Automated Secure Backup & Recovery Vault"  that integrates AWS services like EC2, EBS, S3, SNS, EventBridge, and CloudWatch which Terraform deploys. This system generates EBS snapshots automatically while saving metadata to S3 and delivering notifications through SNS for dependable backup and disaster recovery operations. Through the project we gained expertise in provisioning AWS resources with Terraform while learning to handle IAM roles and security policies alongside automating snapshot creation and storage through event-driven architecture for backup automation. Our debugging work included fixing infrastructure problems by verifying security groups placement within the right VPCs and correctly managing IAM permissions. We have gained essential practical knowledge in IaC and AWS automation while learning cloud security best practices which equipped us to handle real-world cloud engineering tasks.
+
+
 
 
 
