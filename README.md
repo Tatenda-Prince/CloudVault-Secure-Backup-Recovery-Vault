@@ -96,7 +96,7 @@ terraform validete
 ```
 The command should generate a success message, confirming that it is valid, as demonstrated below.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/48c4e2a4db91d69233e385c82ff2a6587528b8d2/img/Screenshot%202025-02-24%20115442.png)
 
 2.4.Let’s now execute the following command to generate a list of all the modifications that Terraform will apply. —
 
