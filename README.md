@@ -161,7 +161,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 4.1.This will find a EC2 Instance with the tag `Backup-Prod-EC2` then create a EBS Snapshot form attached Volume store the backup snapshot in S3 Glacier and send a message to SNS confirming that snapshot was successfully backed in Amazon S3 
 
 
-## Go to your `ebs-backup-Lambd`a function in AWS Console:
+4.2.Go to your `ebs-backup-Lambd`a function in AWS Console:
 
 1.Click `"Test"` at the top.
 
