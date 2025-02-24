@@ -212,7 +212,7 @@ json
 
 4.Look for a file named like:
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/3f8a7525249300b16f4b9b156c9d364d78b4475a/img/Screenshot%202025-02-24%20150327.png)
 
 
 5.Download & open the JSON file to verify the snapshot metadata is stored correctly.
