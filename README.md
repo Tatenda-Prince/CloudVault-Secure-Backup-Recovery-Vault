@@ -208,7 +208,7 @@ Open your S3 bucket where metadata is stored (`S3_BUCKET variable in Lambda`).
 
 Navigate to the `backups/ folder.`
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c726fd11092391153de01d6713dd69a1125e6bb9/img/Screenshot%202025-02-24%20140424.png)
 
 
 Look for a file named like:
