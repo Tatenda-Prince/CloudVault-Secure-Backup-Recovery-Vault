@@ -229,7 +229,7 @@ Check email/SMS/other endpoints subscribed to the SNS topic.
 
 You should receive a message like:
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/ebac2a58c51c7d6767ffee31aab8d324bd77d412/img/Screenshot%202025-02-24%20140635.png)
 
 
 4.5.Check Lambda Logs in CloudWatch
