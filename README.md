@@ -237,7 +237,7 @@ You should receive a message like:
 Check Lambda Logs in CloudWatch
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c5fa729d1d7fd0f3d05c6a55cf1ecabaea32a955/img/Screenshot%202025-02-24%20140706.png)
 
 
 
