@@ -182,8 +182,7 @@ json
 5.Click `"Test"` to invoke the function.
 
 
-![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/a49c6a0e78159376fe3394dd1e4ea1bce1d2c0d0/img/Screenshot%202025-02-24%20140213.png)
-
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/f5a3de86082ff24566b4c87a0e9be99a2b6267ca/img/Screenshot%202025-02-24%20150123.png)
 
 
 
@@ -197,7 +196,7 @@ json
 3.Look for a new snapshot created for your EC2 instance’s EBS volume.
 
 
-![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/8693bc9a219600e47c44f21d2beaea5a1f5feb5f/img/Screenshot%202025-02-24%20140350.png)
+![image_alt]()
 
 
 ## Check if Metadata is Saved in S3
@@ -208,12 +207,12 @@ json
 
 3.Navigate to the `backups/ folder.`
 
-![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c726fd11092391153de01d6713dd69a1125e6bb9/img/Screenshot%202025-02-24%20140424.png)
+![image_alt]()
 
 
 4.Look for a file named like:
 
-![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/6c293a0159fb40ff86fb3f4f2716f4cb367e64aa/img/Screenshot%202025-02-24%20140437.png)
+![image_alt]()
 
 
 5.Download & open the JSON file to verify the snapshot metadata is stored correctly.
@@ -230,7 +229,7 @@ json
 
 4.You should receive a message like:
 
-![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/ebac2a58c51c7d6767ffee31aab8d324bd77d412/img/Screenshot%202025-02-24%20140635.png)
+![image_alt]()
 
 
 ## Check Lambda Logs in CloudWatch
@@ -238,7 +237,7 @@ json
 1.Check Lambda Logs in CloudWatch
 
 
-![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c5fa729d1d7fd0f3d05c6a55cf1ecabaea32a955/img/Screenshot%202025-02-24%20140706.png)
+![image_alt]()
 
 
 ## Step 5: lets test the Backup & Recovery System
