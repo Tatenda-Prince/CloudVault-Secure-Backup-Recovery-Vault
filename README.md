@@ -229,7 +229,7 @@ json
 
 4.You should receive a message like:
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/25d641ef9e8b15db8003dbb6da8b178540a63617/img/Screenshot%202025-02-24%20150327.png)
 
 
 ## Check Lambda Logs in CloudWatch
