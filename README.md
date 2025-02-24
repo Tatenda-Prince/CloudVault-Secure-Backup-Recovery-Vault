@@ -129,6 +129,55 @@ The process should now conclude with a message indicating “Apply complete”, 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/441e21545b32cfac6c1b6f9cb11a88c4be03a6ac/img/Screenshot%202025-02-24%20122509.png)
 
 
+## Step 3: Verify creation of our resources
+
+3.1.In the AWS Management Console, head to the Amazon Lambda dashboard and verify that the two `ebs-backup-lambda` & `ebs-recovery-lambda` function were successfully created
+
+![image_alt]()
+
+
+3.2.In the AWS Management Console, head to the Amazon S3 dashboard and verify that the tatenda-backup-recovery-vault bucket was successfully created with the Lifecycle Configuration `MoveToGlacier`
+
+![image_alt]()
+
+
+3.3.In the AWS Management Console, head to the Amazon EventBridge dashboard and verify that the you have two rules that were successfully created `daily-backup` & `ec2-failure-detection`
+
+![image_alt]()
+
+
+3.4.In the AWS Management Console, head to the Amazon SNS dashboard and verify that the `backup-alerts-topic` was successfully created and Note you must create a subscription for your topic in order to receive notifications through your emails
+
+![image_alt]()
+
+
+3.5.In the AWS Management Console, head to the Amazon EC2 dashboard and verify that the Backup-Prod-EC2 was successfully created with EBS Volume attached to it 
+
+![image_alt]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
