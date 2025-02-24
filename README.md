@@ -288,7 +288,7 @@ json
 1.Here is the cloudwatch logs verifying that both the instance failed and EBS Volume, Now the latest snapshot is creating a new volume to create a new instance.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/4236445db29907a494839d4ca544ade2f48c0912/img/Screenshot%202025-02-24%20153628.png)
 
 
 
