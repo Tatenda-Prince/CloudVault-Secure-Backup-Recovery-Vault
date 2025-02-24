@@ -196,7 +196,7 @@ json
 3.Look for a new snapshot created for your EC2 instance’s EBS volume.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/780def67da5f9efbe1fc9140ebad42a2030c1893/img/Screenshot%202025-02-24%20150250.png)
 
 
 ## Check if Metadata is Saved in S3
