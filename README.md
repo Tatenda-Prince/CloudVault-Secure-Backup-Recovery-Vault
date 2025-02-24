@@ -207,7 +207,7 @@ json
 
 3.Navigate to the `backups/ folder.`
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/7d6e05b15f49e14032a8a98cf166acfd981957de/img/Screenshot%202025-02-24%20150316.png)
 
 
 4.Look for a file named like:
