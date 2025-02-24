@@ -67,4 +67,20 @@ This project serves as a valuable resource for organizations and their cloud eng
 3.AWS CLI Configured with required IAM roles.
 
 
+## Step 1: Clone the Repository
+
+1.1.Clone this repository to your local machine.
+
+```language
+
+git clone
+
+```
+
+
+
+
+
+
+
 
