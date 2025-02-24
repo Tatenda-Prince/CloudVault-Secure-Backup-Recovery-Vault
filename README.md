@@ -143,7 +143,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.3.In the AWS Management Console, head to the Amazon EventBridge dashboard and verify that the you have two rules that were successfully created `daily-backup` & `ec2-failure-detection`
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/63459bf5ad3e63b6c2ff2c720d54a799a64b29e4/img/Screenshot%202025-02-24%20124130.png)
 
 
 3.4.In the AWS Management Console, head to the Amazon SNS dashboard and verify that the `backup-alerts-topic` was successfully created and Note you must create a subscription for your topic in order to receive notifications through your emails
