@@ -119,7 +119,7 @@ terraform apply
 
 Terraform will initiate the process of applying all the changes to the infrastructure. Kindly wait for a few seconds for the deployment process to complete.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c7009adb932c34cae4ccdfe1ea6198a978725c94/img/Screenshot%202025-02-24%20122401.png)
 
 
 ## Success!
