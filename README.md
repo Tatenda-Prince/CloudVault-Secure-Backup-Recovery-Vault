@@ -153,7 +153,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.5.In the AWS Management Console, head to the Amazon EC2 dashboard and verify that the Backup-Prod-EC2 was successfully created with EBS Volume attached to it 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/da4efbbafeb545e79b0196b19b6590d9521ee291/img/Screenshot%202025-02-24%20125641.png)
 
 
 
