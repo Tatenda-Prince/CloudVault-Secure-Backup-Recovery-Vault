@@ -268,7 +268,7 @@ json
 
 4.Check your` email/SMS/` other endpoints for alerts.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/da89bc2aab3f03dfbedfe5727a4a4e41a99410bc/img/Screenshot%202025-02-24%20153654.png)
 
 
 ## Verify a New EC2 Instance is Launched
