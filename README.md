@@ -197,7 +197,7 @@ In the left menu, click `"Snapshots"` (under Elastic Block Store).
 Look for a new snapshot created for your EC2 instance’s EBS volume.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/8693bc9a219600e47c44f21d2beaea5a1f5feb5f/img/Screenshot%202025-02-24%20140350.png)
 
 
 4.3.Check if Metadata is Saved in S3
