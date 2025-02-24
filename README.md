@@ -126,7 +126,7 @@ Terraform will initiate the process of applying all the changes to the infrastru
 
 The process should now conclude with a message indicating “Apply complete”, stating the total number of added, modified, and destroyed resources, accompanied by several resources.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/441e21545b32cfac6c1b6f9cb11a88c4be03a6ac/img/Screenshot%202025-02-24%20122509.png)
 
 
 
