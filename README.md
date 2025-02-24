@@ -104,7 +104,7 @@ The command should generate a success message, confirming that it is valid, as d
 terraform plan
 ```
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c01ce7c99d9e35188854bbc84c7cebf28236d5ed/img/Screenshot%202025-02-24%20121437.png)
 
 
 The list of changes that Terraform is anticipated to apply to the infrastructure resources should be displayed. The “+” sign indicates what will be added, while the “-” sign indicates what will be removed.
