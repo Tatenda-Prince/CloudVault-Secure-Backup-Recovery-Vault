@@ -136,7 +136,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/436665ad8112ec7c38913416a8e6839669f07fbd/img/Screenshot%202025-02-24%20123417.png)
 
 
-3.2.In the AWS Management Console, head to the Amazon S3 dashboard and verify that the tatenda-backup-recovery-vault bucket was successfully created with the Lifecycle Configuration `MoveToGlacier`
+3.2.In the AWS Management Console, head to the Amazon S3 dashboard and verify that the tatenda-backup-recovery-vault bucket was successfully created with the Lifecycle Configuration `MoveToGlacier` Glacier storage class.
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/d85babb79c51ab5c00509cd0ffaaba6af79d56f2/img/Screenshot%202025-02-24%20123608.png)
 
@@ -154,6 +154,102 @@ The process should now conclude with a message indicating “Apply complete”, 
 3.5.In the AWS Management Console, head to the Amazon EC2 dashboard and verify that the Backup-Prod-EC2 was successfully created with EBS Volume attached to it 
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/da4efbbafeb545e79b0196b19b6590d9521ee291/img/Screenshot%202025-02-24%20125641.png)
+
+
+## Step 4: let's invoke the ebs-backup-lambda-function
+
+4.1.This will find a EC2 Instance with the tag `Backup-Prod-EC2` then create a EBS Snapshot form attached Volume store the backup snapshot in S3 Glacier and send a message to SNS confirming that snapshot was successfully backed in Amazon S3 
+
+
+4.2.Go to your `ebs-backup-Lambd`a function in AWS Console:
+
+Click `"Test"` at the top.
+
+Create a new test event (Choose "Create new test event")
+
+Enter the following sample test event JSON:
+
+```language
+json
+{
+  "detail-type": "Scheduled Backup Trigger",
+  "source": "aws.events"
+}
+```
+
+Save the test event.
+
+Click `"Test"` to invoke the function.
+
+
+![image_alt]()
+
+
+
+
+4.3.Verify Snapshot Creation in AWS Console
+
+Go to the AWS ` EC2 Console`
+
+In the left menu, click `"Snapshots"` (under Elastic Block Store).
+
+
+Look for a new snapshot created for your EC2 instance’s EBS volume.
+
+
+![image_alt]()
+
+
+4.3.Check if Metadata is Saved in S3
+
+Go to the `AWS S3` 
+
+Open your S3 bucket where metadata is stored (`S3_BUCKET variable in Lambda`).
+
+Navigate to the `backups/ folder.`
+
+![image_alt]()
+
+
+Look for a file named like:
+
+
+![image_alt]()
+
+Download & open the JSON file to verify the snapshot metadata is stored correctly.
+
+
+4.4.Confirm SNS Notification Received
+
+Go to the SNS `Console' 
+
+Open your SNS topic (check SNS_TOPIC_ARN in your Lambda).
+
+Check email/SMS/other endpoints subscribed to the SNS topic.
+
+You should receive a message like:
+
+![image_alt]()
+
+
+4.5.Check Lambda Logs in CloudWatch
+
+Check Lambda Logs in CloudWatch
+
+
+![image_alt]()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
