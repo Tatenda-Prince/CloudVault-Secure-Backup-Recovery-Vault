@@ -161,13 +161,13 @@ The process should now conclude with a message indicating “Apply complete”, 
 4.1.This will find a EC2 Instance with the tag `Backup-Prod-EC2` then create a EBS Snapshot form attached Volume store the backup snapshot in S3 Glacier and send a message to SNS confirming that snapshot was successfully backed in Amazon S3 
 
 
-4.2.Go to your `ebs-backup-Lambd`a function in AWS Console:
+## Go to your `ebs-backup-Lambd`a function in AWS Console:
 
-Click `"Test"` at the top.
+1.Click `"Test"` at the top.
 
-Create a new test event (Choose "Create new test event")
+2.Create a new test event (Choose "Create new test event")
 
-Enter the following sample test event JSON:
+3.Enter the following sample test event JSON:
 
 ```language
 json
@@ -177,9 +177,9 @@ json
 }
 ```
 
-Save the test event.
+4.Save the test event.
 
-Click `"Test"` to invoke the function.
+5.Click `"Test"` to invoke the function.
 
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/a49c6a0e78159376fe3394dd1e4ea1bce1d2c0d0/img/Screenshot%202025-02-24%20140213.png)
@@ -187,57 +187,120 @@ Click `"Test"` to invoke the function.
 
 
 
-4.3.Verify Snapshot Creation in AWS Console
+## Verify Snapshot Creation in AWS Console
 
-Go to the AWS ` EC2 Console`
+1.Go to the AWS ` EC2 Console`
 
-In the left menu, click `"Snapshots"` (under Elastic Block Store).
+2.In the left menu, click `"Snapshots"` (under Elastic Block Store).
 
 
-Look for a new snapshot created for your EC2 instance’s EBS volume.
+3.Look for a new snapshot created for your EC2 instance’s EBS volume.
 
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/8693bc9a219600e47c44f21d2beaea5a1f5feb5f/img/Screenshot%202025-02-24%20140350.png)
 
 
-4.3.Check if Metadata is Saved in S3
+## Check if Metadata is Saved in S3
 
-Go to the `AWS S3` 
+1.Go to the `AWS S3` 
 
-Open your S3 bucket where metadata is stored (`S3_BUCKET variable in Lambda`).
+2.Open your S3 bucket where metadata is stored (`S3_BUCKET variable in Lambda`).
 
-Navigate to the `backups/ folder.`
+3.Navigate to the `backups/ folder.`
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c726fd11092391153de01d6713dd69a1125e6bb9/img/Screenshot%202025-02-24%20140424.png)
 
 
-Look for a file named like:
+4.Look for a file named like:
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/6c293a0159fb40ff86fb3f4f2716f4cb367e64aa/img/Screenshot%202025-02-24%20140437.png)
 
-Download & open the JSON file to verify the snapshot metadata is stored correctly.
+
+5.Download & open the JSON file to verify the snapshot metadata is stored correctly.
 
 
 
-4.4.Confirm SNS Notification Received
+## Confirm SNS Notification Received
 
-Go to the SNS `Console' 
+1.Go to the SNS `Console' 
 
-Open your SNS topic (check SNS_TOPIC_ARN in your Lambda).
+2.Open your SNS topic (check SNS_TOPIC_ARN in your Lambda).
 
-Check email/SMS/other endpoints subscribed to the SNS topic.
+3.Check email/SMS/other endpoints subscribed to the SNS topic.
 
-You should receive a message like:
+4.You should receive a message like:
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/ebac2a58c51c7d6767ffee31aab8d324bd77d412/img/Screenshot%202025-02-24%20140635.png)
 
 
-4.5.Check Lambda Logs in CloudWatch
+## Check Lambda Logs in CloudWatch
 
-Check Lambda Logs in CloudWatch
+1.Check Lambda Logs in CloudWatch
 
 
 ![image_alt](https://github.com/Tatenda-Prince/CloudVault-Secure-Backup-Recovery-Vault/blob/c5fa729d1d7fd0f3d05c6a55cf1ecabaea32a955/img/Screenshot%202025-02-24%20140706.png)
+
+
+## Step 5: lets test the Backup & Recovery System
+
+## Manually Stop the EC2 Instance
+
+1.Go to the AWS Management Console.
+
+2.Navigate to EC2 > Instances.
+
+3.Find the instance tagged as Backup-Recovery-EC2.
+
+4.Click Instance State > Stop Instance.
+
+5.Wait for the instance to fully stop.
+
+![image_alt]()
+
+
+
+## Check SNS Notifications
+
+1.Open the `Amazon SNS Console.`
+
+2.Navigate to Topics > `backup-alerts-topic.`
+
+3.Click on Subscriptions to see where notifications are sent.
+
+4.Check your` email/SMS/` other endpoints for alerts.
+
+![image_alt]()
+
+
+## Verify a New EC2 Instance is Launched
+
+1.Go to EC2 > Instances.
+
+2.Look for a new `EC2 instance` being launched automatically.
+
+![image_alt]()
+
+
+## Ensure the Volume is Restored from the Snapshot
+
+1.Go to EC2 > Volumes.
+
+3.Find the old EBS volume (associated with the stopped instance).
+
+4.Check if a new EBS volume was created from the latest snapshot.
+
+5.Go to EC2 > Instances, find the new instance, and check its attached volumes.
+
+![image_alt]()
+
+
+## Check Lambda Logs in CloudWatch
+
+
+
+
+
+
 
 
 
